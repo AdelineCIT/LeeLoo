@@ -1,25 +1,13 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import ImageButton from "./Components/ImageBotton";
-import { Image } from "react-native";
+import React, { useState, useEffect, useRef } from "react";
+import { SafeAreaView, StyleSheet, View } from "react-native";
+import UseCamera from "./Components/UseCamera";
 import ImageList from "./Components/ImageList";
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <Image
-        source={require("./Images/Banana.png")}
-        style={{ height: 50, width: 50 }}
-      ></Image> */}
+    <SafeAreaView>
+      {/* <UseCamera></UseCamera> */}
       <ImageList></ImageList>
-    </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
